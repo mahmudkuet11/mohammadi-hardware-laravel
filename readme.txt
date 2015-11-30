@@ -1,0 +1,1 @@
+if error to migration then run (composer dump-autoload) command
