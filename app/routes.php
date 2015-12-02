@@ -35,3 +35,43 @@ Route::get('supplier/transaction', array(
 		'as'	=>	'getSupplierTransaction',
 		'uses'	=>	'SupplierController@getSupplierTransaction'
 	));
+
+Route::post('customer/add', array(
+		'as'	=>	'postAddCustomer',
+		'uses'	=>	'CustomerController@postAddCustomer'
+	));
+
+Route::get('customer/all', array(
+		'as'	=>	'getAllCustomer',
+		'uses'	=>	'CustomerController@getAllCustomer'
+	));
+
+Route::post('customer/ledger/insert', array(
+		'as'	=>	'postInsertCustomerLedger',
+		'uses'	=>	'CustomerController@postInsertCustomerLedger'
+	));
+
+Route::get('customer/transaction', array(
+		'as'	=>	'getCustomerTransaction',
+		'uses'	=>	'CustomerController@getCustomerTransaction'
+	));
+
+Route::post('personal-account/party/add', array(
+		'as'	=>	'postPersonalAccountPartyAdd',
+		'uses'	=>	'PersonalAccountController@postPersonalAccountPartyAdd'
+	));
+
+Route::get('personal-account/party/all', array(
+		'as'	=>	'getAllPersonalAccountParty',
+		'uses'	=>	'PersonalAccountController@getAllPersonalAccountParty'
+	));
+
+Route::post('personal-account/ledger/insert', array(
+		'as'	=>	'postPersonalAccountLedgerInsert',
+		'uses'	=>	'PersonalAccountController@postPersonalAccountLedgerInsert'
+	));
+
+Route::get('personal-account/transaction/get', array(
+		'as'	=>	'getPersonlAccountTransaction',
+		'uses'	=>	'PersonalAccountController@getPersonlAccountTransaction'
+	));
