@@ -75,3 +75,18 @@ Route::get('personal-account/transaction/get', array(
 		'as'	=>	'getPersonlAccountTransaction',
 		'uses'	=>	'PersonalAccountController@getPersonlAccountTransaction'
 	));
+
+Route::post('contractor/add', array(
+		'as'	=>	'postAddContractor',
+		'uses'	=>	'ContractorController@postAddContractor'
+	));
+
+Route::post('contractor/invoice/insert', array(
+		'as'	=>	'postAddContractorInvoice',
+		'uses'	=>	'ContractorController@postAddContractorInvoice'
+	));
+
+Route::post('contractor/payment', array(
+		'as'	=>	'postContractorPayment',
+		'uses'	=>	'ContractorController@postContractorPayment'
+	));
